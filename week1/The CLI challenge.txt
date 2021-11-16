@@ -1,0 +1,40 @@
+
+1.How do I create a hidden file or folder? How do I display it in the CLI?
+
+
+Use the mkdir command to create a new folder. To make that folder hidden, 
+add a dot (.) at the beginning of the name, just like you would when renaming an existing folder to hide it. 
+The touch command creates a new blank file in the current folder.
+
+Use the terminal to display the . git directory with the command ls ls-a . 
+The ls command lists the current directory contents and by default will not show hidden files. 
+If you pass it the -a flag, it will display hidden files.
+
+2.How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+
+use of -p flag with mkrdir in the examples; it is used to create intermediate directories as required — i.e. 
+it will automatically produce the parent directories that do not exist.
+
+ex
+cd public
+mkdir -p static/css static/js views/html
+This will produce the following output:
+
+public/
+..└── static/
+....└── css
+....└── js
+..└── views/
+....└── html
+
+3.How do I append a message to a file, without a newline character, so the output would be:
+
+echo new line
+echo -e "hello\nworld"
+
+echo -e "hello\nworld"
+# Output
+  /*
+   * hello
+   * world
+   */
