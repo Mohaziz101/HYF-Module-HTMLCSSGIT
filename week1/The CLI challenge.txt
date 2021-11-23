@@ -29,12 +29,5 @@ public/
 
 3.How do I append a message to a file, without a newline character, so the output would be:
 
-echo new line
-echo -e "hello\nworld"
-
-echo -e "hello\nworld"
-# Output
-  /*
-   * hello
-   * world
-   */
+we can append a text to a file using command ‘echo’ as following:
+$echo “hello world” >> fileName
